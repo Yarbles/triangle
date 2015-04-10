@@ -10,5 +10,8 @@ describe('triangulator', function() {
     it("returns an isoceles triangle if exactly 2 sides are equal", function() {
         expect(triangulator(2, 2, 3)).to.equal("Isoceles triangle");
     });
+    it ("returns a scalene triangle if no sides are equal", function() {
+        expect(triangulator(18, 28, 39)).to.equal("Scalene triangle");
+    });
 
 });
